@@ -32,7 +32,7 @@
 }
 
 /* make a toggle switch button */
-.switch{
+.switch {
   background-color: var(--toggle-light);
   position: relative;
   display: inline-block;
@@ -173,7 +173,8 @@
 /* =========== styling Today Stats ========= */
 
 .today__stats {
-  margin: 3rem 0;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
 }
 
 .today__stats h2 {
@@ -184,7 +185,7 @@
   width: 100%;
   display: grid;
   grid-template-columns: 1fr;
-  row-gap: 1rem;
+  row-gap: 1.5rem;
 }
 
 .container__today {
@@ -237,6 +238,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
 }
 
 .footer p {

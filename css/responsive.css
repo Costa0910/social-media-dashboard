@@ -1,0 +1,65 @@
+/* Media Queries */
+
+/* Media QUERY FOR TABLE */
+@media only screen and (min-width: 575px) and (max-width: 875px) {
+
+  .header {
+    height: 180px;
+  }
+
+  .header hr {
+    display: none;
+  }
+
+  .wrapper {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .header__toggle .switch {
+    margin-left: 10px;
+  }
+
+  .average__stats,
+  .container__today__stats {
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 1.5rem;
+  }
+
+}
+
+
+/* Media QUERY FOR DESKTOP */
+@media only screen and (min-width: 875px) {
+    /* .wrapper,
+    .average__stats,
+    .today__stats {
+      width: 80%;
+      border: 1px solid red;
+    } */
+
+    .header {
+      height: 180px;
+    }
+
+    .header hr {
+      display: none;
+    }
+
+    .wrapper {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .header__toggle .switch {
+      margin-left: 10px;
+    }
+
+    .average__stats,
+    .container__today__stats {
+      grid-template-columns: repeat(4, 1fr);
+      column-gap: 1.5rem;
+    }
+}
