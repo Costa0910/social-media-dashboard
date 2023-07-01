@@ -1,7 +1,7 @@
 /* =========== styling header ========= */
 .header {
   width: 100%;
-  background-color: var(--top-bg-light);
+  background-color: var(--top-bg);
   height: 240px;
   border-bottom-left-radius: 20px;
   border-bottom-right-radius: 20px;
@@ -33,7 +33,7 @@
 
 /* make a toggle switch button */
 .switch {
-  background-color: var(--toggle-light);
+  background: var(--toggle);
   position: relative;
   display: inline-block;
   width: 50px;
@@ -45,7 +45,7 @@
 }
 
 .slider {
-  background-color: var(--bg-light);
+  background-color: var(--bg);
   width: 18px;
   height: 18px;
   border-radius: 50%;
@@ -86,7 +86,7 @@
   width: 100%;
   height: 250px;
   border-radius: 5px;
-  background-color: var(--card-bg-light);
+  background-color: var(--card-bg);
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -192,7 +192,7 @@
   width: 100%;
   height: 125px;
   border-radius: 5px;
-  background-color: var(--card-bg-light);
+  background-color: var(--card-bg);
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -233,7 +233,7 @@
 
 .footer {
   width: 100%;
-  background-color: var(--top-bg-light);
+  background-color: var(--top-bg);
   height: 100px;
   display: flex;
   justify-content: center;
@@ -244,14 +244,14 @@
 
 .footer p {
   width: 100%;
-  color: var(--text-light);
+  color: var(--text);
   font-size: 0.8rem;
   font-style: italic;
   text-align: center;
 }
 
 .footer a {
-  color: var(--text-light);
+  color: var(--text);
   text-decoration: none;
   font-weight: 700;
   transition: all 0.3s ease-in;
