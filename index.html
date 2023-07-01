@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Frontend Mentor | Social Media Dashboard</title>
     <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <link
       rel="icon"
       type="image/png"
@@ -14,17 +15,19 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__title">
-        <h1>Social Media Dashboard</h1>
-        <p class="header__total">Total Followers: 23,004</p>
-      </div>
-      <hr />
-      <div class="header__toggle">
-        <p>Dark Mode</p>
-        <label class="switch">
-          <input type="checkbox" aria-label="Toggle mode dark and light" />
-          <span class="slider round"></span>
-        </label>
+      <div class="wrapper">
+        <div class="header__title">
+          <h1>Social Media Dashboard</h1>
+          <p class="header__total">Total Followers: 23,004</p>
+        </div>
+        <hr />
+        <div class="header__toggle">
+          <p>Dark Mode</p>
+          <label class="switch">
+            <input type="checkbox" aria-label="Toggle mode dark and light" />
+            <span class="slider round"></span>
+          </label>
+        </div>
       </div>
     </header>
     <main class="main_content">
@@ -224,7 +227,7 @@
       </section>
     </main>
 
-    <footer class="">
+    <footer class="footer">
       <p>
         Challenge by
         <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"

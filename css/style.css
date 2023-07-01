@@ -1,0 +1,261 @@
+/* =========== styling header ========= */
+.header {
+  width: 100%;
+  background-color: var(--top-bg-light);
+  height: 240px;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+}
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+  background-color: inherit;
+  /* border: 1px solid red; */
+  display: flex;
+  flex-direction: column;
+  font-weight: 700;
+  padding: 0;
+}
+
+
+.header__title {
+  margin: 2rem 0 1.2rem;
+}
+
+.header__toggle {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 1.1rem;
+  align-items: center;
+  /* border: 1px solid green; */
+}
+
+/* make a toggle switch button */
+.switch{
+  background-color: var(--toggle-light);
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 25px;
+  border: none;
+  border-radius: 15px;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.slider {
+  background-color: var(--bg-light);
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  position: absolute;
+  top: 4px;
+  left: 28px;
+  transition: all 0.3s ease-in;
+
+}
+
+/* hide default checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* when toggle is checked, slice for left */
+.switch input:checked + .slider {
+  transform: translateX(-23px);
+}
+
+
+/* =========== styling main content ========= */
+
+.main_content {
+  width: 90%;
+  margin: -55px auto 0;
+}
+
+.average__stats {
+  display: grid;
+  row-gap: 1.5rem;
+}
+
+/* style items */
+.container__stats {
+  width: 100%;
+  height: 250px;
+  border-radius: 5px;
+  background-color: var(--card-bg-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem;
+  border-top: 5px solid;
+}
+
+/* style top border of container */
+.fb_container {
+  border-top-color: var(--facebook);
+}
+
+.tw_container {
+  border-top-color: var(--twitter);
+}
+
+.yt_container {
+  border-top-color: var(--youtube);
+}
+
+.ig_container {
+  position: relative;
+}
+
+/* Linear gradient is not support use border color */
+
+.ig_container::before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: 0;
+  width: 100%;
+  height: 5px;
+  background: linear-gradient(90deg, hsl(37, 97%, 70%), hsl(329, 70%, 58%));
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+.stats__total h2 {
+  font-size: 3rem;
+}
+
+.stats__total p {
+  letter-spacing: 5px;
+  padding: 0;
+}
+
+.stats__title,
+.stats__total,
+.stats__today {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.stats__total {
+  flex-direction: column;
+  margin-bottom: .5rem;
+}
+
+.stats__title img {
+  width: 20px;
+  margin-right: 0.3rem;
+}
+
+.stats__today img {
+  width: 10px;
+  height: 5px;
+  margin-right: 0.3rem;
+}
+
+/* style up and down class */
+
+.up {
+  color:var(--up);
+}
+
+.down {
+  color: var(--down);
+}
+
+/* =========== styling Today Stats ========= */
+
+.today__stats {
+  margin: 3rem 0;
+}
+
+.today__stats h2 {
+  margin-bottom: 1.5rem;
+}
+
+.container__today__stats {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr;
+  row-gap: 1rem;
+}
+
+.container__today {
+  width: 100%;
+  height: 125px;
+  border-radius: 5px;
+  background-color: var(--card-bg-light);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.today__title,
+.today__total {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.today__title img {
+  width: 20px;
+  margin-right: 0.3rem;
+}
+
+/* reset h2 margin back */
+
+.today__total h2 {
+  margin-bottom: 0;
+}
+
+.today {
+  display: flex;
+  align-items: center;
+}
+
+.today img {
+  width: 10px;
+  height: 5px;
+  margin-right: 0.3rem;
+}
+
+
+/* =========== styling Footer ========= */
+
+.footer {
+  width: 100%;
+  background-color: var(--top-bg-light);
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer p {
+  width: 100%;
+  color: var(--text-light);
+  font-size: 0.8rem;
+  font-style: italic;
+  text-align: center;
+}
+
+.footer a {
+  color: var(--text-light);
+  text-decoration: none;
+  font-weight: 700;
+  transition: all 0.3s ease-in;
+}
+
+.footer a:hover {
+  color: var(--facebook);
+  text-decoration: underline;
+
+}
