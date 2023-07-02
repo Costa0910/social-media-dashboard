@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [repo](https://github.com/Costa0910/social-media-dashboard)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Source](https://github.com/Costa0910/social-media-dashboard)
+- Live Site URL: [Live](https://costa0910-social-media-dashboard.netlify.app)
 
 ## My process
 
