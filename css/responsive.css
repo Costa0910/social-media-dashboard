@@ -1,7 +1,7 @@
 /* Media Queries */
 
 /* Media QUERY FOR TABLE */
-@media only screen and (min-width: 575px) and (max-width: 875px) {
+@media only screen and (min-width: 575px) and (max-width: 975px) {
 
   .header {
     height: 180px;
@@ -31,13 +31,12 @@
 
 
 /* Media QUERY FOR DESKTOP */
-@media only screen and (min-width: 875px) {
-    /* .wrapper,
+@media only screen and (min-width: 976px) {
+    .wrapper,
     .average__stats,
     .today__stats {
-      width: 80%;
-      border: 1px solid red;
-    } */
+      width: 85%;
+    }
 
     .header {
       height: 180px;
