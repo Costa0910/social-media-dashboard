@@ -54,7 +54,6 @@ body {
 .wrapper,
 .average__stats,
 .today__stats {
-  /* width: 100%; */
   max-width: 1440px;
   margin: 0 auto;
 }
