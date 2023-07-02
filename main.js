@@ -1,16 +1,21 @@
-const toggleBtn = document.querySelector(".switch");
+// Description: Main JS file for the project
 
-// Listen for a click on the button
+const toggleBtn = document.querySelector(".switch");
+const input = document.querySelector(".switch input");
+
 toggleBtn.addEventListener("input", updateTheme);
 
-// Update the theme
 function updateTheme(event) {
-  if (event.target.checked) {
-    document.documentElement.classList.add("dark");
-    document.documentElement.classList.remove("light");
+  const darkMode = event.target.checked;
 
-  } else {
-    document.documentElement.classList.remove("dark");
-    document.documentElement.classList.add("light");
-  }
+  document.documentElement.classList.toggle("dark", darkMode);
+  document.documentElement.classList.toggle("light", !darkMode);
+  localStorage.setItem("darkMode", darkMode);
 }
+
+document.addEventListener("DOMContentLoaded", () => {
+  const darkMode = localStorage.getItem("darkMode");
+
+  input.checked = darkMode === "true";
+  updateTheme({ target: { checked: input.checked } });
+});
